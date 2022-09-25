@@ -55,7 +55,7 @@ const Main = () => {
                         const time = DateTime.fromSeconds(item.dt).setZone(weatherData.timezone).toFormat('LLL dd')
                         const icon = `http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`
                         return(
-                            <div class='flex justify-between pb-6'>
+                            <div class='flex justify-between items-center pb-6'>
                                 <h1>{time}</h1>
                                 <img src={icon} alt='weatherIcon'></img>
                                 <h1>{Math.floor(item.temp.day)}°C</h1>
