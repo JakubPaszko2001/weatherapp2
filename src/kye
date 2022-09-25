@@ -1,0 +1,3 @@
+https://api.openweathermap.org/data/2.5/onecall?lat=52.2298&lon=21.0118&exclude=current,minutely,alerts&appid=84063a6070abfb5a77bfac6148df6fd9&units=metric
+
+const response = await axios.get(`${api.base}weather?q=${search}&appid=${api.key}&units=metric`)
