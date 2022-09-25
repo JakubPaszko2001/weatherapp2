@@ -18,9 +18,8 @@ const Main = () => {
     const handleClick = () => {
         setButtonData(search)
     }
-
   return (
-<div class='h-screen bg-gradient-to-b from-sky-500 to-white'>
+<div class='h-screen bg-gradient-to-b from-sky-500 to-white' id='container'>
     <div class='m-auto max-w-xl'>
         <div class='flex flex-col items-center justify-center pt-12'>
             <div class='flex'>
@@ -45,7 +44,7 @@ const Main = () => {
                             <div class='flex flex-col items-center bg-white  pb-6 pt-6'>
                                 <h1>{time}</h1>
                                 <img src={icon} alt='weatherIcon'></img>
-                                <h1>{item.temp}</h1>
+                                <h1>{Math.floor(item.temp)}°C </h1>
                             </div>
                         )
                     })}
